@@ -1,9 +1,5 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const request = require('request');
-
-var path = require('path');
-
 
 
 const app = express()
@@ -23,7 +19,7 @@ app.get('/motherboard', (req, res) => {
     res.render('Motherboard')
 })
 app.get('/gpu', (req, res) => {
-    res.render('Graphics Card')
+    res.render('gpu')
 })
 app.get('/case', (req, res) => {
     res.render('Case')
@@ -32,7 +28,7 @@ app.get('/psu', (req, res) => {
     res.render('PSU')
 })
 app.get('/hdd', (req, res) => {
-    res.render('Hard Drive')
+    res.render('hdd')
 })
 
 
