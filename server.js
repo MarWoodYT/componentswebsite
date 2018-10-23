@@ -19,6 +19,22 @@ app.get('/', (req, res) => {
 app.get('/cpu', (req, res) => {
     res.render('CPU')
 })
+app.get('/motherboard', (req, res) => {
+    res.render('Motherboard')
+})
+app.get('/gpu', (req, res) => {
+    res.render('Graphics Card')
+})
+app.get('/case', (req, res) => {
+    res.render('Case')
+})
+app.get('/psu', (req, res) => {
+    res.render('PSU')
+})
+app.get('/hdd', (req, res) => {
+    res.render('Hard Drive')
+})
+
 
 
 
