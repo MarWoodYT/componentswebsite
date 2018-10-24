@@ -1,0 +1,43 @@
+{
+    "cards": [{
+            "Amount": 15,
+            "Name": "Nvidia GTX 1080",
+            "ID": "0",
+            "Price": "£615"
+        },
+        {
+            "Amount": 12,
+            "Name": "Nvidia GTX 1070",
+            "ID": "1",
+            "Price": "£550"
+        },
+        {
+            "Amount": 23,
+            "Name": "Nvidia GTX 1060",
+            "ID": "2",
+            "Price": "£430"
+
+        },
+        {
+            "Amount": 38,
+            "Name": "AMD RX 480",
+            "ID": "3",
+            "Price": "£320"
+        }
+
+    ], 
+
+    "cpu": [
+            {
+                "Amount": 49,
+                "Name": "Intel i7 7700k",
+                "ID": "1",
+                "Price": "£340"
+
+
+            }
+
+
+
+    ]
+}

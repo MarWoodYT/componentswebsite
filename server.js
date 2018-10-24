@@ -13,23 +13,18 @@ app.get('/', (req, res) => {
 })
 
 app.get('/cpu', (req, res) => {
-    res.render('CPU')
+    res.render('products/CPU')
 })
 app.get('/motherboard', (req, res) => {
-    res.render('Motherboard')
+    res.render('products/Motherboard')
 })
 app.get('/gpu', (req, res) => {
-    res.render('gpu')
+   var Stock = require ("./appdata/gpu")
+    res.render('products/gpu', {
+        Stock: Stock.cards
+    })
 })
-app.get('/case', (req, res) => {
-    res.render('Case')
-})
-app.get('/psu', (req, res) => {
-    res.render('PSU')
-})
-app.get('/hdd', (req, res) => {
-    res.render('hdd')
-})
+
 
 
 

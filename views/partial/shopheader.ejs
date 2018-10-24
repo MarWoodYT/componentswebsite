@@ -1,0 +1,112 @@
+<html>
+<head>
+        <script>
+                $(document).ready(function(){
+                  // Add smooth scrolling to all links
+                  $("a").on('click', function(event) {
+                
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+                      // Prevent default anchor click behavior
+                      event.preventDefault();
+                
+                      // Store hash
+                      var hash = this.hash;
+                
+                      // Using jQuery's animate() method to add smooth page scroll
+                      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                      $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                      }, 800, function(){
+                
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                      });
+                    } // End if
+                  });
+                });
+                </script>
+                
+                <script>
+                $(document).ready(function(){
+                
+                
+                
+                    //Click event to scroll to top
+                    $('.scrollToTop').click(function(){
+                        $('html, body').animate({scrollTop : 0},800);
+                        return false;
+                    });
+                
+                });
+                
+                </script>
+                
+    <style>
+        /* Add a black background color to the top navigation */
+        .topnav {
+            background-color: #202023;
+            overflow: hidden;
+        }
+        
+        /* Style the links inside the navigation bar */
+        .topnav a {
+            float: right;
+            display: inli;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 18px 23px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        
+        /* Change the color of links on hover */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+            text-decoration: none;
+        }
+        
+        /* Add an active class to highlight the current page */
+        .active {
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+        }
+        
+        /* Hide the link that should open and close the topnav on small screens */
+        .topnav .icon {
+            display: none;
+            text-decoration: none;
+        
+        
+        }
+        
+        h3{
+            padding-left: 40px;
+            float: left;
+            color: white;
+            
+        }
+ 
+        </style>
+
+
+</head>
+
+<body>
+
+<div class="topnav" id="myTopnav">
+
+
+        <h3> <strong> IT SHOP </strong></h3>
+    <a href="./motherboard">CONTACT US</a>
+    <a href= "#section2">PROCESSERS</a>
+    <a href="#section2">GRAPHICS CARDS </a>
+    <a href="./cpu">ABOUT</a>
+    <a href="./">HOME</a>
+    
+    
+</div>
+</body>
+</html>
