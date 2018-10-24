@@ -128,8 +128,74 @@
                 "Name": "Intel i7 6700",
                 "ID": "5",
                 "Price": "£208"
+            },
+            {
+                "Amount": 34,
+                "Name": "Intel i5 6600k",
+                "ID": "6",
+                "Price": "£240"
+            },
+            {
+                "Amount": 17,
+                "Name": "Intel i5 6600",
+                "ID": "7",
+                "Price": "£230"
+            },
+            {
+                "Amount": 11,
+                "Name": "Intel i5 6500",
+                "ID": "8",
+                "Price": "£210"
+            },
+            {
+                "Amount": 42,
+                "Name": "Intel i5 6400",
+                "ID": "9",
+                "Price": "£200"
+            },
+            {
+                "Amount": 41,
+                "Name": "Intel i5 6700",
+                "ID": "10",
+                "Price": "£208"
+            },
+            {
+                "Amount": 24,
+                "Name": "Intel i3 8300",
+                "ID": "11",
+                "Price": "£150"
+            },
+            {
+                "Amount": 47,
+                "Name": "Intel i3 8100",
+                "ID": "12",
+                "Price": "£108"
+            },
+            {
+                "Amount": 29,
+                "Name": "Intel i3 8350k",
+                "ID": "13",
+                "Price": "£166"
+            },
+            {
+                "Amount": 48,
+                "Name": "Intel i3 7320",
+                "ID": "14",
+                "Price": "£140"
             }
 
+
+
+
+    ],
+
+    "cases":[
+        {
+            "Amount": 28,
+            "Name": "Antec GX 1200",
+            "ID": "1",
+            "Price": "£68"
+        }
 
 
 

@@ -22,7 +22,8 @@ app.get('/shop', (req, res) => {
    var Stock = require ("./appdata/stock")
     res.render('shop', {
         gpu: Stock.cards,
-        cpu: Stock.cpu
+        cpu: Stock.cpu,
+        cases: Stock.cases
     })
 })
 

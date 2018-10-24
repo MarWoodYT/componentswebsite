@@ -335,10 +335,39 @@ body, html {
 
 
 </center>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</div><center><h1 id="C3">CASES</h1></center>
+<center><div class="w3-container">
+        <br>
+      
+        <table class="w3-table-all">
+          <tr>
+            <th><h2>Case</h2></th>
+            <th><h2>Stock</h2></th>
+            <th><h2>Price</h2></th>
+          </tr>
+
+          <% for (var i in cases) { %>
+          <tr>
+              
+            <td><p><%= cases[i].Name %></p></td>
+            <td><p><%= cases[i].Amount %></p></td>
+            <td><p><%= cases[i].Price %></p></td>
+        
+          </tr>
+              
+          <%}%>
+          
+        </table>
+      </div>
+      
+</div>
 <div style="height:1000px;background-color:white;font-size:36px"></div>
-
-
-
 <br>
 <br>
 
