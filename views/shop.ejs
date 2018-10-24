@@ -222,7 +222,7 @@ body, html {
 
   <body>
 
-    <% include ../partial/header %>
+    <% include ./partial/header %>
 
 <div class="parallax"></div>
 
@@ -244,12 +244,12 @@ body, html {
                     <th><h2>Price</h2></th>
                   </tr>
 
-                  <% for (var i in Stock) { %>
+                  <% for (var i in gpu) { %>
                   <tr>
                       
-                    <td><p><%= Stock[i].Name %></p></td>
-                    <td><p><%= Stock[i].Amount %></p></td>
-                    <td><p><%= Stock[i].Price %></p></td>
+                    <td><p><%= gpu[i].Name %></p></td>
+                    <td><p><%= gpu[i].Amount %></p></td>
+                    <td><p><%= gpu[i].Price %></p></td>
                 
                   </tr>
                       
@@ -259,26 +259,8 @@ body, html {
               </div>
               
 </div>
-
-
 </center>
-
-
-	
-  
-</div>
-
-<div class="parallax"></div>
-
-
-<div class="parallax1"></div>
-
-<div style="height:1000px;background-color:white;font-size:36px">
-
-
-
-<br>
-<center><h1 id="C2">PROCESSERS</h1></center>
+</div><center><h1 id="C2">PROCESSERS</h1></center>
 <center><div class="w3-container">
         <br>
       
@@ -289,12 +271,12 @@ body, html {
             <th><h2>Price</h2></th>
           </tr>
 
-          <% for (var i in Stock) { %>
+          <% for (var i in cpu) { %>
           <tr>
               
-            <td><p><%= Stock[i].Name %></p></td>
-            <td><p><%= Stock[i].Amount %></p></td>
-            <td><p><%= Stock[i].Price %></p></td>
+            <td><p><%= cpu[i].Name %></p></td>
+            <td><p><%= cpu[i].Amount %></p></td>
+            <td><p><%= cpu[i].Price %></p></td>
         
           </tr>
               
@@ -307,6 +289,8 @@ body, html {
 
 
 </center>
+<div style="height:1000px;background-color:white;font-size:36px"></div>
+
 
 
 <br>
@@ -315,11 +299,6 @@ body, html {
 </div>
 </div>
 </div>
-
-
-
-<div class="parallax1"></div>
-
 
 
 
@@ -329,7 +308,7 @@ body, html {
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <% include ../partial/footer %>
+    <% include ./partial/footer %>
 
   </body>
 

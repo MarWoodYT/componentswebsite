@@ -12,16 +12,17 @@ app.get('/', (req, res) => {
     res.render('index')
 })
 
-app.get('/cpu', (req, res) => {
-    res.render('products/CPU')
+app.get('/about', (req, res) => {
+    res.render('about')
 })
-app.get('/motherboard', (req, res) => {
-    res.render('products/Motherboard')
+app.get('/contact', (req, res) => {
+    res.render('contact')
 })
-app.get('/gpu', (req, res) => {
-   var Stock = require ("./appdata/gpu")
-    res.render('products/gpu', {
-        Stock: Stock.cards
+app.get('/shop', (req, res) => {
+   var Stock = require ("./appdata/stock")
+    res.render('shop', {
+        gpu: Stock.cards,
+        cpu: Stock.cpu
     })
 })
 

@@ -67,7 +67,7 @@ body, html {
 
 .parallax {
     /* The image used */
-    background-image: url(http://scalar.usc.edu/works/farnham-research/media/scheme_chips_black_computer_elements_29651_1920x1080.jpg);
+    background-image: url(http://s3.amazonaws.com/digitaltrends-uploads-prod/2018/01/AMD-vs-Intel.jpg);
 
     /* Full height */
     height: 100%;
@@ -89,7 +89,7 @@ body, html {
 
 .parallax1 {
     /* The image used */
-    background-image: url(https://i.pinimg.com/474x/72/ab/4c/72ab4cbaa406c634f6869bb336333915--resolution-hd-high-resolution-wallpapers.jpg);
+    background-image: url(https://static.techspot.com/images2/news/bigimage/2016/06/2016-06-09-image-12.jpg);
 
     /* Full height */
     height: 20%;
@@ -111,9 +111,8 @@ body, html {
 
 </style>
 
-  
-
-    <title>Motherboard</title>
+    
+    <title>GPU</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -121,12 +120,14 @@ body, html {
     <!-- Custom styles for this template -->
     <link href="css/business-frontpage.css" rel="stylesheet">
 
+
+    <script src="server.js"></script>
   </head>
 
   <body>
 
-    
-  <% include ../partial/header %>
+  
+    <% include ./partial/header %>
 
 
 
@@ -136,15 +137,19 @@ body, html {
 
 <div style="height:1000px;background-color:white;font-size:36px">
 &nbsp
-	<center><h1>The Motherboard</h1></center>
+	<center><h1>Central Processing Unit</h1></center>
 	<br>
-	<center><p>The Motherboard is the largest PCB or Printed circuit board inside a compter system and acts as a link between all of the major components to bea able to send data to the CPU.<br>
-  Motherboards are created with a few key components mainly, thhis consists of te circitory, the CPU socket, the RAM slots and the PCI-E slots for graphics cards.<br>
-Other Motherboards also come with additional features such as a heat sink which is a way of dispersing heat in the motherboard. </p></center>
+	<center><p>The Centeral Processing Unit or CPU is the brain of the computer most of the computers functions are carried out here. The CPU is responsible for executing a sequence of stored instructions,<br>
+   This can include stored numbers and command lines as well as the computer applications. The CPU is also reponsible for taking inputs form an input device and creating a output for it.<br>
+ All CPU's have three main features, which are: Cores, Clock Speed and Cache<br>
+A CPU can contain one or more processing units. Each unit is called a core. A core contains an ALU or an Arithmatic Logic Unit. Most modern day CPU's have Dual or Quad Cores, High end CPU's can evn hold anywhere from six to eight.<br>
+This allows the user to multitask programs.<br>
+The clock speed indicates how fast the CPU can run, this is measured in megahertz (MHz) or gigahertz (gHz) and means how many instruction cycles the CPU can complets with in a second.<br>
+Finally Cache is a small amount of memory which is a part of the CPU. It is used to temporarily hold instructions and data that the CPU is likely to reuse.</p></center>
 	 &nbsp
    &nbsp
    &nbsp
-	<center><iframe width="560" height="315" src="https://www.youtube.com/embed/nQIB5qcl3R8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
+	<center><iframe width="560" height="315" src="https://www.youtube.com/embed/F_f-1PPkTmw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
 </div>
 
 <div class="parallax"></div>
@@ -157,20 +162,20 @@ Other Motherboards also come with additional features such as a heat sink which 
 
 
 <br>
-<center><h1>Examples of Some Motherboards</h1></center>
+<center><h1>Examples of Some CPU's</h1></center>
 <br>
 <br>
 <br>
 <div>
- <img src="asus_rog_maximus_formula.jpg"/>
- <img src="PRIME X399-A-400x400.jpg"/>
- <img src="4lVFddNT7qmiM6MZ_500-min-400x400.jpg" />
+ <img src="getimage (1).jpg"/>
+ <img src="getimage.jpg"/>
+ <img src="5793127_sa (1).jpg" />
 </div>
 
 <br>
 <br>
-<center><p>Motherboards also come with lots of external ports to allow connections to external devices such as monitors, mice or microphones.<br>
-It also allows ports for USB devices meaning a user and insert a USB flash drive, or an external Hard Drive.</p></center>
+<center><p>The processor is probbably the most important part of any computing system it provides the user with multitasking capabilities,<br>
+it also computes information and allows input and output devices to run properly. Finally, hte CPU is also tasked with calcultaion and computing of numbers and data. </p></center>
 </div>
 </div>
 </div>
@@ -195,7 +200,7 @@ It also allows ports for USB devices meaning a user and insert a USB flash drive
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 
-    <% include ../partial/footer %>
+    <% include ./partial/footer %>
   </body>
 
 </html>
