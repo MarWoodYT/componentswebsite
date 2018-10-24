@@ -23,7 +23,72 @@
             "Name": "AMD RX 480",
             "ID": "3",
             "Price": "£320"
+        },
+        {
+            "Amount": 12,
+            "Name": "AMD RX 470",
+            "ID": "4",
+            "Price": "£301"
+
+        },
+        {
+            "Amount": 53,
+            "Name": "AMD RX 460",
+            "ID": "6",
+            "Price": "£270"
+
+        },
+        {
+            "Amount": 36,
+            "Name": "Nvidia TITAN X",
+            "ID": "7",
+            "Price": "£830"
+
+        },
+        
+        {
+            "Amount": 49,
+            "Name": "Nvidia TITAN V",
+            "ID": "8",
+            "Price": "£950"
+
+        },
+        {
+            "Amount": 27,
+            "Name": "Nvidia GTX 980TI",
+            "ID": "9",
+            "Price": "£320"
+
+        },
+        {
+            "Amount": 56,
+            "Name": "Nvidia GTX 980",
+            "ID": "10",
+            "Price": "£270"
+
+        },
+        {
+            "Amount": 38,
+            "Name": "Nvidia GTX 970",
+            "ID": "11",
+            "Price": "£260"
+
+        },
+        {
+            "Amount": 74,
+            "Name": "Nvidia GTX 960",
+            "ID": "12",
+            "Price": "£230"
+
+        },
+        {
+            "Amount": 43,
+            "Name": "Nvidia GTX 950",
+            "ID": "13",
+            "Price": "£210"
+
         }
+        
 
     ], 
 
@@ -33,9 +98,38 @@
                 "Name": "Intel i7 7700k",
                 "ID": "1",
                 "Price": "£340"
-
-
+            },
+            {
+                "Amount": 28,
+                "Name": "Intel i7 8700k",
+                "ID": "2",
+                "Price": "£400"
+            },
+            {
+                "Amount": 32,
+                "Name": "Intel i7 8700",
+                "ID": "3",
+                "Price": "£360"
+            },
+            {
+                "Amount": 16,
+                "Name": "Intel i7 7700",
+                "ID": "3",
+                "Price": "£304"
+            },
+            {
+                "Amount": 19,
+                "Name": "Intel i7 6700k",
+                "ID": "4",
+                "Price": "£260"
+            },
+            {
+                "Amount": 41,
+                "Name": "Intel i7 6700",
+                "ID": "5",
+                "Price": "£208"
             }
+
 
 
 
