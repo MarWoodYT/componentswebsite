@@ -35,6 +35,9 @@ app.get('/delgpu', (req, res) => {
 app.get('/edit', (req, res) => {
     res.render('edit')
 })
+app.get('/editgpu', (req, res) => {
+    res.render('edit/editgpu')
+})
 
 app.post('/add/gpu',(req,res) =>{
     var Stock = require ("./appdata/stock")
