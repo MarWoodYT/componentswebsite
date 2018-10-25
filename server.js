@@ -91,7 +91,6 @@ app.post('/add/cases',(req,res) =>{
     res.render('add/cases')
 })
 
-
 app.get('/shop', (req, res) => {
    var Stock = require ("./appdata/stock")
     res.render('shop', {
@@ -100,10 +99,6 @@ app.get('/shop', (req, res) => {
         cases: Stock.cases
     })
 })
-
-
-
-
 
 
 
