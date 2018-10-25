@@ -28,6 +28,13 @@ app.get('/cpu', (req, res) => {
 app.get('/cases', (req, res) => {
     res.render('add/cases')
 })
+app.get('/delgpu', (req, res) => {
+    res.render('delete/delgpu')
+})
+
+app.get('/edit', (req, res) => {
+    res.render('edit')
+})
 
 app.post('/add/gpu',(req,res) =>{
     var Stock = require ("./appdata/stock")
