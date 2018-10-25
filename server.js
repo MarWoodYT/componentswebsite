@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const fs= require ('fs');
 
 
 const app = express()
@@ -18,6 +19,27 @@ app.get('/about', (req, res) => {
 app.get('/contact', (req, res) => {
     res.render('contact')
 })
+app.get('/addgpu', (req, res) => {
+    res.render('addgpu')
+})
+
+app.post('/addgpu',(req,res) =>{
+    var Stock = require ("./appdata/stock")
+    Stock.cards.push (
+        {
+            Amount:req.body.Amount,
+            Name:req.body.Name,
+            Price:req.body.Price,
+            ID:req.body.ID
+        }
+    )
+    fs.writeFile(
+        "appdata/stock.json",
+        JSON.stringify(Stock),
+        )
+    res.render('addgpu')
+})
+
 app.get('/shop', (req, res) => {
    var Stock = require ("./appdata/stock")
     res.render('shop', {
@@ -26,6 +48,8 @@ app.get('/shop', (req, res) => {
         cases: Stock.cases
     })
 })
+
+
 
 
 
