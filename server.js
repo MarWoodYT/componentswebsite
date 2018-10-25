@@ -22,6 +22,12 @@ app.get('/contact', (req, res) => {
 app.get('/addgpu', (req, res) => {
     res.render('addgpu')
 })
+app.get('/addcpu', (req, res) => {
+    res.render('addcpu')
+})
+app.get('/addcase', (req, res) => {
+    res.render('addcase')
+})
 
 app.post('/addgpu',(req,res) =>{
     var Stock = require ("./appdata/stock")
@@ -39,6 +45,42 @@ app.post('/addgpu',(req,res) =>{
         )
     res.render('addgpu')
 })
+
+app.post('/addcpu',(req,res) =>{
+    var Stock = require ("./appdata/stock")
+    Stock.cpu.push (
+        {
+            Amount:req.body.Amount,
+            Name:req.body.Name,
+            Price:req.body.Price,
+            ID:req.body.ID
+        }
+    )
+    fs.writeFile(
+        "appdata/stock.json",
+        JSON.stringify(Stock),
+        )
+    res.render('addcpu')
+})
+
+
+app.post('/addcase',(req,res) =>{
+    var Stock = require ("./appdata/stock")
+    Stock.cases.push (
+        {
+            Amount:req.body.Amount,
+            Name:req.body.Name,
+            Price:req.body.Price,
+            ID:req.body.ID
+        }
+    )
+    fs.writeFile(
+        "appdata/stock.json",
+        JSON.stringify(Stock),
+        )
+    res.render('addcase')
+})
+
 
 app.get('/shop', (req, res) => {
    var Stock = require ("./appdata/stock")
