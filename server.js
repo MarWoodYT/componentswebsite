@@ -19,17 +19,17 @@ app.get('/about', (req, res) => {
 app.get('/contact', (req, res) => {
     res.render('contact')
 })
-app.get('/addgpu', (req, res) => {
-    res.render('addgpu')
+app.get('/gpu', (req, res) => {
+    res.render('add/gpu')
 })
-app.get('/addcpu', (req, res) => {
-    res.render('addcpu')
+app.get('/cpu', (req, res) => {
+    res.render('add/cpu')
 })
-app.get('/addcase', (req, res) => {
-    res.render('addcase')
+app.get('/cases', (req, res) => {
+    res.render('add/cases')
 })
 
-app.post('/addgpu',(req,res) =>{
+app.post('/add/gpu',(req,res) =>{
     var Stock = require ("./appdata/stock")
     Stock.cards.push (
         {
@@ -43,10 +43,10 @@ app.post('/addgpu',(req,res) =>{
         "appdata/stock.json",
         JSON.stringify(Stock),
         )
-    res.render('addgpu')
+    res.render('add/gpu')
 })
 
-app.post('/addcpu',(req,res) =>{
+app.post('/add/cpu',(req,res) =>{
     var Stock = require ("./appdata/stock")
     Stock.cpu.push (
         {
@@ -60,11 +60,11 @@ app.post('/addcpu',(req,res) =>{
         "appdata/stock.json",
         JSON.stringify(Stock),
         )
-    res.render('addcpu')
+    res.render('add/cpu')
 })
 
 
-app.post('/addcase',(req,res) =>{
+app.post('/add/cases',(req,res) =>{
     var Stock = require ("./appdata/stock")
     Stock.cases.push (
         {
@@ -78,7 +78,7 @@ app.post('/addcase',(req,res) =>{
         "appdata/stock.json",
         JSON.stringify(Stock),
         )
-    res.render('addcase')
+    res.render('add/cases')
 })
 
 
