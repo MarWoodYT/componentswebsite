@@ -32,6 +32,8 @@ app.get('/cases', (req, res) => {
 })
 
 
+
+
 app.get('/edit', (req, res) => {
     res.render('edit')
 })
@@ -46,9 +48,27 @@ app.get('/editcases', (req, res) => {
 })
 
 
+
+
 app.get('/deletegpu', (req, res) => {
     res.render('delete/deletegpu')
 })
+
+app.get('/deletecpu', (req, res) => {
+    res.render('delete/deletecpu')
+})
+
+app.get('/deletecases', (req, res) => {
+    res.render('delete/deletecases')
+})
+
+
+
+
+
+//ADDS ITEMS TO JSON
+
+
 
 app.post('/add/gpu', (req, res) => {
     var Stock = require("./appdata/stock")
@@ -64,6 +84,8 @@ app.post('/add/gpu', (req, res) => {
     )
     res.render('add/gpu')
 })
+
+
 
 app.post('/add/cpu', (req, res) => {
     var Stock = require("./appdata/stock")
@@ -81,6 +103,8 @@ app.post('/add/cpu', (req, res) => {
 })
 
 
+
+
 app.post('/add/cases', (req, res) => {
     var Stock = require("./appdata/stock")
     Stock.cases.push({
@@ -96,6 +120,13 @@ app.post('/add/cases', (req, res) => {
     res.render('add/cases')
 })
 
+
+
+
+
+
+
+// EDITS ITEMS IN JSON
 
 
 
@@ -117,6 +148,8 @@ app.post('/edit/gpu', (req, res) => {
     res.redirect('/')
 })
 
+
+
 app.post('/edit/editcpu', (req, res) => {
     var Stock = require("./appdata/stock")
     var i = Stock.cpu.findIndex(obj => obj.ID == req.body.ID)
@@ -134,6 +167,8 @@ app.post('/edit/editcpu', (req, res) => {
     )
     res.redirect('/')
 })
+
+
 
 app.post('/edit/editcases', (req, res) => {
     var Stock = require("./appdata/stock")
@@ -155,6 +190,9 @@ app.post('/edit/editcases', (req, res) => {
 
 
 
+//DELETES ITEMS IN JSON
+
+
 
 app.post('/delete/deletegpu', (req, res) => {
     var Stock = require("./appdata/stock")
@@ -168,6 +206,39 @@ app.post('/delete/deletegpu', (req, res) => {
     )
     res.redirect('/')
 })
+
+
+
+app.post('/delete/deletecpu', (req, res) => {
+    var Stock = require("./appdata/stock")
+    var i = Stock.cpu.findIndex(obj => obj.ID == req.body.ID)
+    
+    Stock.cpu.splice(i,1) 
+
+    fs.writeFile(
+        "appdata/stock.json",
+        JSON.stringify(Stock),
+    )
+    res.redirect('/')
+})
+
+
+app.post('/delete/deletecases', (req, res) => {
+    var Stock = require("./appdata/stock")
+    var i = Stock.cases.findIndex(obj => obj.ID == req.body.ID)
+    
+    Stock.cases.splice(i,1) 
+
+    fs.writeFile(
+        "appdata/stock.json",
+        JSON.stringify(Stock),
+    )
+    res.redirect('/')
+})
+
+
+
+
 
 
 

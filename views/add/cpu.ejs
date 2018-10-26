@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -14,138 +15,17 @@
 
     <!-- Custom styles for this template -->
     <link href="css/business-frontpage.css" rel="stylesheet">
-    <style>
-        /* Add a black background color to the top navigation */
-        .topnav {
-            background-color: #202023;
-            overflow: hidden;
-        }
-        
-        /* Style the links inside the navigation bar */
-        .topnav a {
-            float: right;
-            display: inli;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 18px 23px;
-            text-decoration: none;
-            font-size: 17px;
-        }
-        
-        /* Change the color of links on hover */
-        .topnav a:hover {
-            background-color: #ddd;
-            color: black;
-            text-decoration: none;
-        }
-        
-        /* Add an active class to highlight the current page */
-        .active {
-            background-color: #4CAF50;
-            color: white;
-            text-decoration: none;
-        }
-        
-        /* Hide the link that should open and close the topnav on small screens */
-        .topnav .icon {
-            display: none;
-            text-decoration: none;
-        
-        
-        }
-        
-        h3{
-            padding-left: 40px;
-            float: left;
-            color: white;
-            
-        }
- 
-        </style>
-    <style>
-        * {
-                    box-sizing: border-box;
-                }
-                
-                input[type=text], select, textarea {
-                    width: 100%;
-                    padding: 12px;
-                    border: 1px solid #ccc;
-                    border-radius: 4px;
-                    resize: vertical;
-                }
-                
-                label {
-                    padding: 12px 12px 12px 0;
-                    display: inline-block;
-                }
-                
-                input[type=submit] {
-                    background-color: rgba(161, 161, 161, 0.486);
-                    color: white;
-                    padding: 12px 20px;
-                    border: none;
-                    border-radius: 4px;
-                    cursor: pointer;
-                    float: right;
-                }
-                
-                input[type=submit]:hover {
-                    background-color: #45a049;
-                }
-                
-                .container {
-                    border-radius: 5px;
-                    background-color: #f2f2f2;
-                    padding: 20px;
-                }
-                
-                .col-25 {
-                    float: left;
-                    width: 25%;
-                    margin-top: 6px;
-                }
-                
-                .col-75 {
-                    float: left;
-                    width: 75%;
-                    margin-top: 6px;
-                }
-                
-                /* Clear floats after the columns */
-                .row:after {
-                    content: "";
-                    display: table;
-                    clear: both;
-                }
-                
-                /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-                @media screen and (max-width: 600px) {
-                    .col-25, .col-75, input[type=submit] {
-                        width: 100%;
-                        margin-top: 0;
-                    }
-                }
-                </style>
     <link rel="icon" type="img/ico" href="CPU-Processor-PNG-image3-500x457.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/business-frontpage.css" rel="stylesheet">
-
-</head>
-
-
-<style>
-    * {
+    <style>
+        * {
     box-sizing: border-box;
 }
 
@@ -209,6 +89,60 @@ input[type=submit]:hover {
     }
 }
 </style>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/business-frontpage.css" rel="stylesheet">
+
+    <style>
+        /* Add a black background color to the top navigation */
+        .topnav {
+            background-color: #202023;
+            overflow: hidden;
+        }
+        
+        /* Style the links inside the navigation bar */
+        .topnav a {
+            float: right;
+            display: inli;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 18px 23px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        
+        /* Change the color of links on hover */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+            text-decoration: none;
+        }
+        
+        /* Add an active class to highlight the current page */
+        .active {
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+        }
+        
+        /* Hide the link that should open and close the topnav on small screens */
+        .topnav .icon {
+            display: none;
+            text-decoration: none;
+        
+        
+        }
+        
+        h3{
+            padding-left: 40px;
+            float: left;
+            color: white;
+            
+        }
+ 
+        </style>
 
 <body>
 
@@ -224,7 +158,14 @@ input[type=submit]:hover {
 
 
     </div>
-    <h1>ADD CPU</h1>
+    
+    <br>
+    <br>
+    <center><h1>ADD CPU</h1></center>
+    <br>
+    <br>
+    <br>
+    <br>
     <div class="container">
         <form action="add/cpu" method="POST">
 
@@ -281,12 +222,8 @@ input[type=submit]:hover {
     <br>
 
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    
+    <br><br>
     <br>
 
     <% include ../partial/footer %>
