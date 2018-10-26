@@ -38,6 +38,12 @@ app.get('/edit', (req, res) => {
 app.get('/editgpu', (req, res) => {
     res.render('edit/editgpu')
 })
+app.get('/editcpu', (req, res) => {
+    res.render('edit/editcpu')
+})
+app.get('/editcases', (req, res) => {
+    res.render('edit/editcases')
+})
 
 app.post('/add/gpu', (req, res) => {
     var Stock = require("./appdata/stock")
@@ -94,6 +100,42 @@ app.post('/edit/gpu', (req, res) => {
     
     
     Stock.cards [i] = {
+        Amount: req.body.Amount,
+        Name: req.body.Name,
+        Price: req.body.Price,
+        ID: req.body.ID
+    }
+    fs.writeFile(
+        "appdata/stock.json",
+        JSON.stringify(Stock),
+    )
+    res.redirect('/')
+})
+
+app.post('/edit/editcpu', (req, res) => {
+    var Stock = require("./appdata/stock")
+    var i = Stock.cpu.findIndex(obj => obj.ID == req.body.ID)
+    
+    
+    Stock.cpu [i] = {
+        Amount: req.body.Amount,
+        Name: req.body.Name,
+        Price: req.body.Price,
+        ID: req.body.ID
+    }
+    fs.writeFile(
+        "appdata/stock.json",
+        JSON.stringify(Stock),
+    )
+    res.redirect('/')
+})
+
+app.post('/edit/editcases', (req, res) => {
+    var Stock = require("./appdata/stock")
+    var i = Stock.cases.findIndex(obj => obj.ID == req.body.ID)
+    
+    
+    Stock.cases [i] = {
         Amount: req.body.Amount,
         Name: req.body.Name,
         Price: req.body.Price,
