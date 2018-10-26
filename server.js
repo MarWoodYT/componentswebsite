@@ -28,9 +28,7 @@ app.get('/cpu', (req, res) => {
 app.get('/cases', (req, res) => {
     res.render('add/cases')
 })
-app.get('/delgpu', (req, res) => {
-    res.render('delete/delgpu')
-})
+
 
 app.get('/edit', (req, res) => {
     res.render('edit')
@@ -103,7 +101,7 @@ app.get('/shop', (req, res) => {
 
 
 app.listen(3000, function () {
-    console.log('Example app listening on port 3000!')
+    console.log('HOSTING_ON_PORT_3000')
   })
 
   
