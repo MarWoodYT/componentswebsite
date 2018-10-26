@@ -90,10 +90,10 @@ app.post('/add/cases', (req, res) => {
 
 app.post('/edit/gpu', (req, res) => {
     var Stock = require("./appdata/stock")
-    var i = Stock.cards.findIndex(obj => obj.id == req.body.id)
+    var i = Stock.cards.findIndex(obj => obj.ID == req.body.ID)
     
     
-    Stock.cards[i] = {
+    Stock.cards [i] = {
         Amount: req.body.Amount,
         Name: req.body.Name,
         Price: req.body.Price,
@@ -105,6 +105,9 @@ app.post('/edit/gpu', (req, res) => {
     )
     res.redirect('/')
 })
+
+
+
 
 
 app.get('/shop', (req, res) => {
