@@ -45,6 +45,11 @@ app.get('/editcases', (req, res) => {
     res.render('edit/editcases')
 })
 
+
+app.get('/deletegpu', (req, res) => {
+    res.render('delete/deletegpu')
+})
+
 app.post('/add/gpu', (req, res) => {
     var Stock = require("./appdata/stock")
     Stock.cards.push({
@@ -148,6 +153,21 @@ app.post('/edit/editcases', (req, res) => {
     res.redirect('/')
 })
 
+
+
+
+app.post('/delete/deletegpu', (req, res) => {
+    var Stock = require("./appdata/stock")
+    var i = Stock.cards.findIndex(obj => obj.ID == req.body.ID)
+    
+    Stock.cards.splice(i,1) 
+
+    fs.writeFile(
+        "appdata/stock.json",
+        JSON.stringify(Stock),
+    )
+    res.redirect('/')
+})
 
 
 

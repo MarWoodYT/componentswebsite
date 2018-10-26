@@ -148,7 +148,7 @@
         }
     </style>
 
-    <title>FORM EDIT</title>
+
 </head>
 
 <body>
@@ -160,25 +160,18 @@
 
 
         <h3> <strong> IT SHOP </strong></h3>
-        <a href="./deletegpu">REMOVE</a>
-        <a href="./editgpu">EDIT</a>
-        <a href="./gpu">ADD</a>
-        <a href="./">HOME</a>
+        <a href="./deletegpu">EDIT GPU</a>
+        <a href="./editcpu">EDIT CPU</a>
+        <a href="./editcases">EDIT CASE</a>
+        <a href="../">HOME</a>
 
 
     </div>
 
     <br>
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
     <center>
-        <h1>EDIT PAGE CHOOSE A LINK TO EDIT STOCK</h1>
+        <h1>REMOVE GPU</h1>
     </center>
     <br>
     <br>
@@ -188,6 +181,52 @@
 
 
 
+    <div class="container">
+        <form action="delete/deletegpu" method="POST">
+
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="Name">Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="Name" name="Name" placeholder="Name">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="Amount">Amount</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="Amount" name="Amount" placeholder="Amount">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="ID">ID</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="ID" name="ID" placeholder="ID">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="Price">Price</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="Price" name="Price" placeholder="Price">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
 
 
 
@@ -199,18 +238,10 @@
     <br>
     <br>
     <br>
-    <br>
-    <br>
+    
+    
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <% include ./partial/footer %>
+    <% include ../partial/footer %>
 </body>
 
 </html>
