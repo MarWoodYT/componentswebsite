@@ -181,10 +181,55 @@
 
 
 
-    <br>
-    <br>
+    <div class="container">
+        <form action="edit/gpu" method="POST">
 
 
+            <div class="row">
+                <div class="col-25">
+                    <label for="Name">Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="Name" name="Name" placeholder="Name">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="Amount">Amount</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="Amount" name="Amount" placeholder="Amount">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="ID">ID</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="ID" name="ID" placeholder="ID">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="Price">Price</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="Price" name="Price" placeholder="Price">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+
+
     <br>
     <br>
     <br>
@@ -193,19 +238,8 @@
     <br>
     <br>
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    
+    
 
     <% include ../partial/footer %>
 </body>

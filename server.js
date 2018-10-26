@@ -85,6 +85,28 @@ app.post('/add/cases', (req, res) => {
     res.render('add/cases')
 })
 
+
+
+
+app.post('/edit/gpu', (req, res) => {
+    var Stock = require("./appdata/stock")
+    var i = Stock.cards.findIndex(obj => obj.id == req.body.id)
+    
+    
+    Stock.cards[i] = {
+        Amount: req.body.Amount,
+        Name: req.body.Name,
+        Price: req.body.Price,
+        ID: req.body.ID
+    }
+    fs.writeFile(
+        "appdata/stock.json",
+        JSON.stringify(Stock),
+    )
+    res.redirect('/')
+})
+
+
 app.get('/shop', (req, res) => {
     var Stock = require("./appdata/stock")
     res.render('shop', {
